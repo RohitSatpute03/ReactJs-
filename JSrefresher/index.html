@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let a =34;
+        // let b = "THis is me "
+        // console.log(a);
+        // console.log(b);
+
+        let a = 56;
+        a = 67 + 767;
+        console.log(a);
+
+        function hello(){
+            console.log("heyy rohhh")
+        }
+
+        let obj = {
+            r: 34,
+            m: 64,
+            func : function myfunc(number){
+                console.log("THis number is:", number)
+            }
+        }
+
+        document.addEventListener("click", function click(){
+            console.log("Clicked");
+            // alert("hello")
+            let conf = confirm("Are you sure?");
+            console.log(conf);
+        })
+        let arr = [1,2,3,4];
+        console.log(this);
+        // let myfunc = () => {
+        //     function myfunc(number){
+        //         console.log("THis is the number:",  this);
+        //     }
+        //     myfunc();
+        // };
+
+        let mobj = {
+            a: this,
+            myfunc : function(number){
+                console.log(this);
+            }
+        }
+        mobj.myfunc();
+        console.log(mobj.a);
+        setTimeout(() => {
+            console.log("yayyyy")
+        }, 3000);
+        console.log("Main pehle")
+    </script>
+</head>
+<body>
+    <h1>
+        Learning js
+    </h1>
+</body>
+</html>
